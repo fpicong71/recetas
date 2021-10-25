@@ -1,0 +1,226 @@
+/*General Styles for My Favourite Recipes*/
+
+html,body{
+    width:100%;
+    font-family: 'Raleway', sans-serif;
+    font-size:17px;
+    line-height:1.5rem;
+}
+
+header{
+    padding-top:4vh;
+    background-color:antiquewhite;
+}
+
+
+header>h1{
+    font-family: 'Fugaz One', cursive;
+    font-size:3rem;
+    line-height:3.5rem;
+    text-align: center;
+    margin:0 auto 4vh auto;
+    color:darkcyan;
+}
+
+nav{
+    background-color: rgba(0,139,139,.4);
+    color:white;
+    text-align: center;
+    padding:2vh 0 0vh 0;
+}
+
+nav>h2{
+    font-size:1.5rem;
+    font-weight:700;
+    letter-spacing:.4rem;
+    padding-bottom:2vh;
+}
+
+#lista{
+     background-color:rgba(0,139,139,.5);
+     height:4vh;
+     overflow:hidden;
+}
+#lista p{
+    color: white;
+    font-size:5vh;
+}
+
+#lista:hover{
+    height:auto;
+    overflow:visible;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-style: italic;
+    display: inline-block;
+    padding:.3rem 0;
+}
+
+nav a:hover{
+    text-decoration:underline;
+    font-weight:500;
+    color:bisque;
+}
+
+nav a:visited{
+    color:antiquewhite;
+}
+
+main{
+    width:80vw;
+    margin:5vh auto;
+}
+
+article{
+    margin:5vh 0;
+}
+
+.for_figcaption{
+    font-size:.75rem;
+    font-style: italic;
+}
+.recipe_title{
+    color:darkcyan;
+    font-size:1.5rem;
+    font-weight:bolder;
+}
+hr{
+    color:darkcyan;
+    border:.15rem solid rgba(0,139,139,.4);
+}
+.figure_recipe{
+    margin:2vh auto;
+}
+
+.figure_recipe > img{
+    box-sizing: border-box;
+    width=100%;
+    padding:.3rem;
+    border:.15rem solid rgba(0,139,139,.5);
+}
+.ingredients>h3{
+    font-weight:bolder;
+    font-size: 1rem;
+    color:rgba(0,139,139,.7);
+}
+.ingredients{
+    width:25vw;
+    float:left;
+    margin-right:5vw;
+    font-size: .8rem;
+    line-height:.95rem;
+}
+
+/**TAbla Ingredientes-------------------------*/
+.ingredients table{
+    border-collapse:collapse;
+    background-color:rgba(250, 235, 215,.3);
+}
+.ingredients table caption{
+    background-color:rgba(0,139,139,.7);
+    color:white;
+    padding:.8vh 0;
+    text-transform: uppercase;
+}
+.ingredients tr:nth-child(odd){
+    background-color:rgba(250, 235, 215,.5);
+}
+.ingredients th{
+    background-color:rgba(0,139,139,.3);
+    color:white;
+    padding:.8vh .3vw;
+}
+.ingredients tr>td{
+    padding:.8rem .5rem .8rem 1rem;
+}
+.ingredients tr>td:first-child{
+    border-right:.1vw solid rgba(250, 235, 215,.3);
+}
+.subIngredients{
+    background-color: rgba(0,139,139,.3);
+    color:white;
+    text-align: center;
+    font-size: .7rem;
+    padding: 1vh .3vw;
+    border-top:.3vh solid rgba(0,139,139,.7);
+    border-bottom:.3vh solid rgba(0,139,139,.7);
+    text-transform: uppercase;
+}
+/**FIN tabla ingredientes----------------*/
+
+.preparation{
+    width:50vw;
+    float:left;
+    line-height:1.2rem;
+}
+.preparation>h4{
+    color:rgba(0,139,139,.7);
+}
+.preparation ol{
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin:1vh 0 3vh 0;
+}
+
+.preparation ol li{
+    margin:1vh 0 1vh 0;
+}
+.clearfix{
+    clear: both;
+}
+.toTop{    
+    margin:4vh 0 4vh 0;
+    display:inline-block;
+    font-size:.8rem;
+    text-decoration: none;
+    color:rgba(0,139,139,.7);
+}
+.toTop:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    color:rgba(0,139,139,1);
+}
+.toTop:visited{
+    text-decoration:none;
+    color:rgba(0,139,139,.7);
+}
+
+.toTop>img{
+    height:2vh;
+}
+
+footer{
+    font-size:.8rem;
+}
+
+footer>nav>p{
+    text-align:center;
+    margin-bottom: 1vh;
+    color:darkcyan;
+}
+
+footer>nav>ul>li{
+    display:inline-block;
+    margin:1vh 5vw;
+}
+
+.social li{
+    display:inline-block;
+    margin:0 1vw;
+}
+
+
+/*Media Query*/
+@media (max-width:800px) {
+    .ingredients, .preparation{
+        width:80vw;
+        float: none;
+    }
+    
+    .preparation{
+        margin-top:5vh;
+    }
+  }
